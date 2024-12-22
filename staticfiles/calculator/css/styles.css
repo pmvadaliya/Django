@@ -1,0 +1,140 @@
+/* Basic styles for calculator */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Calculator container */
+.calculator {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for calculator */
+.calculator:hover {
+    transform: translateY(-10px); /* Lift the calculator on hover */
+}
+
+/* Title */
+h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Result display field */
+.result {
+    width: 100%;
+    height: 50px;
+    font-size: 32px;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #333;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.result:focus {
+    border-color: #4CAF50;
+    background-color: #fff;
+}
+
+/* Button container using CSS Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* Calculator buttons */
+.btn {
+    padding: 20px;
+    font-size: 22px;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #ddd;
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Button active effect */
+.btn:active {
+    background-color: #ccc;
+    transform: scale(1);
+}
+
+/* Operators (addition, subtraction, etc.) */
+button:nth-child(4), button:nth-child(8), button:nth-child(12), button:nth-child(16) {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:nth-child(4):hover, button:nth-child(8):hover, button:nth-child(12):hover, button:nth-child(16):hover {
+    background-color: #45a049;
+}
+
+/* Clear and equals button with special styling */
+button:nth-child(14) {
+    background-color: #ff7043;
+    color: white;
+}
+
+button:nth-child(14):hover {
+    background-color: #e64a19;
+}
+
+button:nth-child(15) {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:nth-child(15):hover {
+    background-color: #45a049;
+}
+
+/* Input and button focus styles */
+button:focus, .result:focus {
+    outline: none;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .calculator {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .result {
+        font-size: 28px;
+        height: 40px;
+    }
+
+    .btn {
+        font-size: 18px;
+        padding: 15px;
+    }
+}

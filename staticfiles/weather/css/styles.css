@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Weather App Container - The main widget container */
+.weather-app {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect for Widget */
+.weather-app:hover {
+    transform: translateY(-10px); /* Lift the widget on hover */
+}
+
+/* Title */
+.weather-app h2 {
+    font-size: 28px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Input field (City search) */
+.input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus {
+    border-color: #66bb6a;
+}
+
+/* Button to fetch weather data */
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Weather Info Display */
+.weather-info {
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #444;
+    font-size: 18px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+/* Display for weather info: City, Temperature, etc. */
+.weather-info p {
+    margin: 12px 0;
+}
+
+/* Highlighting strong labels */
+.weather-info p strong {
+    color: #4CAF50;
+}
+
+/* Weather Icon styling */
+.weather-info img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Adding additional styles for clear skies */
+.weather-info .clear-sky {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3c763d;
+}
+
+/* Error Message for City Not Found */
+.error-message {
+    color: #e74c3c;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .weather-app {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .input, .btn {
+        font-size: 14px;
+    }
+
+    .weather-info {
+        font-size: 16px;
+    }
+}
