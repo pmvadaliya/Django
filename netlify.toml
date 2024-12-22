@@ -1,8 +1,14 @@
 [build]
-  command = "python manage.py migrate && python manage.py collectstatic --noinput"
-  publish = "staticfiles"  # Updated to the correct static directory
+  command = "python manage.py migrate && python manage.py collectstatic --noinput"  # Run migrations and collect static files
+  publish = "staticfiles"  # Publish collected static files to the `staticfiles` folder
+
+# Redirects settings for routing requests
+[[redirects]]
+  from = "/calculator/*"
+  to = "/calculator/index.html"
+  status = 200
 
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
+  from = "/weather/*"
+  to = "/weather/index.html"
   status = 200
