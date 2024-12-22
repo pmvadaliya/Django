@@ -1,6 +1,6 @@
 [build]
   command = "python manage.py migrate && python manage.py collectstatic --noinput"
-  publish = "static"
+  publish = "staticfiles"  # Updated to the correct static directory
 
 [[redirects]]
   from = "/*"
