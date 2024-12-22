@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-_k-^#+v-=*jp2wj_-4^1ex_n#oe0x=3b($2!yio-)25$bimb$+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['pmvadaliya-app.netlify.app', 'localhost']
 
 
 # Application definition
