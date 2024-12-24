@@ -1,6 +1,6 @@
 [build]
-  command = "python manage.py migrate && python manage.py collectstatic --noinput"  # Run migrations and collect static files
-  publish = "staticfiles"  # Publish collected static files to the `staticfiles` folder
+  publish = "staticfiles"
+  command = "python manage.py migrate && python manage.py collectstatic --noinput && python manage.py runserver"
 
 # Redirects settings for routing requests to static files
 [[redirects]]
