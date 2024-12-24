@@ -119,18 +119,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 import os
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-STATIC_URL = '/static/'
-
-# Directory where static files are stored
-STATICFILES_DIRS = [
-    BASE_DIR / "static",  # This is to include the static folder within your project
-]
-
-# Directory where collected static files are stored
-STATIC_ROOT = BASE_DIR / "staticfiles"
