@@ -6,15 +6,10 @@
 # Redirects settings for routing requests to the static files
 [[redirects]]
   from = "/calculator/*"
-  to = "/calculator/index.html"  # Ensure this path matches the static location
+  to = "/calculator/:splat"  # Ensures dynamic routing to static files in the calculator folder
   status = 200
 
 [[redirects]]
   from = "/weather/*"
-  to = "/weather/index.html"  # Ensure this path matches the static location
-  status = 200
-
-[[redirects]]
-  from = "/index.html"
-  to = "/index.html"  # Ensure the home page is served correctly
+  to = "/weather/:splat"  # Ensures dynamic routing to static files in the weather folder
   status = 200

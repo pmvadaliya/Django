@@ -28,6 +28,9 @@ C:.
 ¦   ¦       +---css
 ¦   ¦       ¦       styles.css
 ¦   ¦       ¦       
+¦   ¦       +---html
+¦   ¦       ¦       index.html
+¦   ¦       ¦       
 ¦   ¦       +---js
 ¦   ¦               script.js
 ¦   ¦               
@@ -208,19 +211,21 @@ C:.
 ¦   ¦                   xregexp.min.js
 ¦   ¦                   
 ¦   +---calculator
-¦   ¦   ¦   index.html
-¦   ¦   ¦   
 ¦   ¦   +---css
 ¦   ¦   ¦       styles.css
+¦   ¦   ¦       
+¦   ¦   +---html
+¦   ¦   ¦       index.html
 ¦   ¦   ¦       
 ¦   ¦   +---js
 ¦   ¦           script.js
 ¦   ¦           
 ¦   +---weather
-¦       ¦   index.html
-¦       ¦   
 ¦       +---css
 ¦       ¦       styles.css
+¦       ¦       
+¦       +---html
+¦       ¦       index.html
 ¦       ¦       
 ¦       +---js
 ¦               script.js
@@ -244,6 +249,9 @@ C:.
     ¦   +---weather
     ¦       +---css
     ¦       ¦       styles.css
+    ¦       ¦       
+    ¦       +---html
+    ¦       ¦       index.html
     ¦       ¦       
     ¦       +---js
     ¦               script.js
