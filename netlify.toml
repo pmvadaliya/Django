@@ -5,7 +5,7 @@
 # Redirects settings for routing requests to static files
 [[redirects]]
   from = "/calculator/*"
-  to = "/static/calculator/index.html"  # Ensure it points to the correct static path
+  to = "/calculator/templates/calculator/index.html"  # Ensure it points to the correct static path
   status = 200
 
 [[redirects]]
