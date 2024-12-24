@@ -5,10 +5,10 @@
 # Redirects settings for routing requests to static files
 [[redirects]]
   from = "/calculator/*"
-  to = "/calculator.html"  # Ensure this path matches the static location
+  to = "/calculator/index.html"  # Ensure this path matches the static location
   status = 200
 
 [[redirects]]
   from = "/weather/*"
-  to = "/weather.html"  # Ensure this path matches the static location
+  to = "/weather/index.html"  # Ensure this path matches the static location
   status = 200

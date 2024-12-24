@@ -13,10 +13,6 @@ def get_weather(request):
 
         response = requests.get(url)
         data = response.json()
-        print("!11111111111111111111111")
-        print(data)
-        print(url)
-        print("!11111111111111111111111")
 
         if data.get('cod') != 200:
             return JsonResponse({'error': 'City not found'}, status=400)
