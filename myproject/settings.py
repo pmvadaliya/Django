@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-_k-^#+v-=*jp2wj_-4^1ex_n#oe0x=3b($2!yio-)25$bimb$+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['pmvadaliya-app.netlify.app', 'localhost']
+ALLOWED_HOSTS = ['pmvadaliya-app.netlify.app', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -126,3 +126,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'calculator/templates/calculator'),
+    os.path.join(BASE_DIR, 'weather/templates/weather'),
+]
